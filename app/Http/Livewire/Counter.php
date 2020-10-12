@@ -7,16 +7,18 @@ use Livewire\Component;
 class Counter extends Component
 {
 
-    public $count = 0;
+    //public $count = 0;
 
-    public function increment()
+    public function farder_add()
     {
-        $this->count++;
+        $this->emit('farder_add');
+        //$this->count++;
     }
 
-    public function decrement()
+    public function farder_delete()
     {
-        $this->count--;
+        $this->emit('farder_delete');
+       // $this->count--;
     }
 
     public function render()
